@@ -1,0 +1,57 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>264</x><y>376</y><w>248</w><h>120</h></coordinates><panel_attributes>Superviviente
+-
+- String: nombre
+- int: codigo
+- boolean: disponibilidad
+- NivelExperiencia: nivel
+-
++ Superviviente(código, nombre, disponibilidad, nivel)
++ calcularAptitud(): int {abstract}
++ equals(obj: object): boolean
++ getNombre(): String
++getCodigo(): int
++getDisponibilidad(): boolean
++getNivel(): nivel</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>376</x><y>504</y><w>24</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>376</x><y>488</y><w>24</w><h>64</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>536</y><w>360</w><h>32</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>544</x><y>544</y><w>24</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>544</y><w>24</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>608</y><w>168</w><h>96</h></coordinates><panel_attributes>Explorador
+-
+- int: resistencia
+-
++ Explorador(código, nombre,
+ disponibilidad, nivel)
++ calcularAptitud(): int 
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>376</x><y>544</y><w>24</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>304</x><y>608</y><w>152</w><h>88</h></coordinates><panel_attributes>Medico
+-
+- int: conocimiento
+-
++ Explorador(código, nombre, 
+disponibilidad, nivel)
++ calcularAptitud(): int 
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>472</x><y>608</y><w>152</w><h>80</h></coordinates><panel_attributes>Constructor
+-
+- int: habilidadTecnica
+-
++ Explorador(código, nombre,
+ disponibilidad, nivel)
++ calcularAptitud(): int 
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>344</y><w>344</w><h>152</h></coordinates><panel_attributes>Refugio
+--
+- nombre: String
+- supervivientes: List&lt;Superviviente&gt;
+--
++ Refugio(nombre: String)
++ agregarSupervivientes(superviviente: Superviviente): void
++obtenerSupervivientes(): List&lt;supervivientes&gt;
++filtrarPorNivel(nivel : Nivelexperiencia) : List&lt;Superviviente&gt;
++obtenerDisponiblesAptitudMinima(minimo: int): List&lt;Superviviente&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>504</x><y>416</y><w>112</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+                    1
+0..*                    </panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>344</y><w>192</w><h>152</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+NivelExperiencia
+-
++NOVATO
++INTERMEDIO
++EXPERTO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>184</x><y>432</y><w>96</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element></diagram>
